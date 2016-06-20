@@ -1,0 +1,28 @@
+<html>
+
+<head>
+<title> Assign1 </title>
+<!-- Create an object type –Car using constructor function. It should consists of make, model and year properties. Now, create two objects of 
+car and alert their properties -->
+</head>
+
+<body>
+	<script type="text/javascript">
+	
+	function Car(make, model, year) {
+	  this.make = make;
+	  this.model = model;
+	  this.year = year;
+	}
+	
+	var car1 = new Car("Nissan", "300ZX", 1990);
+	var car2 = new Car("Mazda", "Miata", 1994);
+	
+	document.write("CAR 1 " + "<br> " + " Make: " + car1.make + ", Model: " + car1.model + ", Year: " + car1.year + "<br>" + "<br>");
+	document.write("CAR 2 " + "<br> " + " Make: " + car2.make + ", Model: " + car2.model + ", Year: " + car2.year);
+	
+	
+	</script>
+</body>
+
+</html>

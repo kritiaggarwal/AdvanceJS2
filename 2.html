@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Assign2 </title>
+<!--Create two public variables and four functions - add, subtract, multiply and divide which takes these two public variables and perform 
+their respective operations i.e. add, subtract, multiply and divide. These functions should also contain a private variable and alert them. -->
+</head>
+
+<body>
+	<p id="main"></p><br>
+		<button onclick="add(a,b)">  Addition </button> <br> <p id="add"> </p> <br> <br>
+		<button onclick="sub(a,b)">  Subtraction </button> <br> <p id="sub"> </p> <br> <br>
+		<button onclick="multiply(a,b)">  Multiplication </button> <br> <p id="mul"> </p> <br> <br>
+		<button onclick="divide(a,b)">  Division </button>  <br> <p id="div1"> </p> <br> <br>
+		
+	<script type="text/javascript">
+		var a=prompt("Enter the value of first variable","");
+		var b=prompt("Enter the value of second variable","");
+		
+		document.getElementById("main").innerHTML=("Value of var1= " + a + "<br>" + "Value of var2= " + b + "<br>");
+		
+		function add(var1,var2){
+			var add_res;
+			add_res = parseInt(var1) + parseInt(var2);
+			document.getElementById("add").innerHTML=("Result of Addition: " + add_res);
+		}
+		
+		function sub(var1,var2){
+			var sub_res;
+			sub_res = var1 - var2;
+			document.getElementById("sub").innerHTML=("Result of Subtraction: " + sub_res);
+		}
+		
+		function multiply(var1, var2){
+			var mul_res;
+			mul_res = var1 * var2;
+			document.getElementById("mul").innerHTML=("Result of Multiplication: " + mul_res);
+		}
+		
+		function divide(var1,var2){
+			var div_res;
+			if(var2 != 0){
+				div_res = var1 / var2;
+				document.getElementById("div1").innerHTML= (" Result of Division: " + div_res);
+				}else{
+				document.getElementById("div1").innerHTML=("Invalid Operation.Please enter non zero value in denominator");
+			}
+		}
+		
+		
+		
+	</script>
+		
+</body>
+
+</html>
